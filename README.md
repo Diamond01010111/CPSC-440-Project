@@ -1,1 +1,52 @@
-# CPSC-440-Project
+
+# Low-Resource Question Classification on TREC
+
+This project studies low-resource question classification using the TREC question classification dataset. The task is to classify natural-language questions into six coarse-grained categories: `ABBR`, `DESC`, `ENTY`, `HUM`, `LOC`, and `NUM`.
+
+## Project Goal
+
+The goal is to compare how different model families perform when only a limited amount of labelled training data is available. In addition to classification performance, this project also evaluates confidence calibration.
+
+## Models Compared
+
+The notebook compares four models:
+
+- Multinomial Naive Bayes with bag-of-words features
+- Logistic Regression with TF-IDF features
+- BiLSTM with pretrained GloVe embeddings
+- DistilBERT fine-tuned for six-class classification
+
+## Experimental Setup
+
+We create several low-resource training settings from the TREC training set:
+
+- 100 examples
+- 500 examples
+- 1000 examples
+- Full training set
+
+Each setting is split into training and validation data. The official TREC test set is used only for final evaluation.
+
+## Evaluation Metrics
+
+The models are evaluated using:
+
+- Accuracy
+- Macro-F1
+- Expected Calibration Error (ECE)
+- Reliability diagrams
+- Confusion matrix
+- Representative misclassified examples
+
+## Files
+
+- `project.ipynb`: main notebook containing data loading, preprocessing, model training, evaluation, and plots
+- `final_results.csv`: final quantitative results table, if generated
+- `*.png`: saved plots used in the report, such as macro-F1 curves, ECE curves, reliability diagrams, and confusion matrix
+
+## How to Run
+
+Install the required packages:
+
+```bash
+pip install datasets transformers accelerate torch scikit-learn pandas numpy matplotlib seaborn tqdm
