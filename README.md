@@ -41,12 +41,5 @@ The models are evaluated using:
 ## Files
 
 - `project.ipynb`: main notebook containing data loading, preprocessing, model training, evaluation, and plots
-- `final_results.csv`: final quantitative results table, if generated
-- `*.png`: saved plots used in the report, such as macro-F1 curves, ECE curves, reliability diagrams, and confusion matrix
 
-## How to Run
 
-Install the required packages:
-
-```bash
-pip install datasets transformers accelerate torch scikit-learn pandas numpy matplotlib seaborn tqdm
