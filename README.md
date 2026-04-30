@@ -1,4 +1,3 @@
-
 # Low-Resource Question Classification on TREC
 
 This project studies low-resource question classification using the TREC question classification dataset. The task is to classify natural-language questions into six coarse-grained categories: `ABBR`, `DESC`, `ENTY`, `HUM`, `LOC`, and `NUM`.
@@ -38,8 +37,19 @@ The models are evaluated using:
 - Confusion matrix
 - Representative misclassified examples
 
+## Runtime
+
+- Platform: Google Colab
+- Python: 3.12.13
+- GPU: NVIDIA Tesla T4 (when GPU runtime is enabled)
+
 ## Files
 
-- `project.ipynb`: main notebook containing data loading, preprocessing, model training, evaluation, and plots
+- `CPSC_440_Final_Project.ipynb`: main notebook (data loading, preprocessing, training, evaluation, plots)
+- `requirements.txt`: minimal dependency list
+- `requirements_full.txt`: full environment snapshot (`pip freeze`) for exact reproduction
 
+Install minimal dependencies:
 
+```bash
+pip install -r requirements.txt
