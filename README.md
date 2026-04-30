@@ -47,6 +47,7 @@ The models are evaluated using:
 
 - `CPSC_440_Final_Project.ipynb`: main notebook (data loading, preprocessing, training, evaluation, plots)
 - `requirements.txt`: minimal dependency list
+- `requirements_full.txt`: full environment snapshot (`pip freeze`) for exact reproduction
 
 Install minimal dependencies:
 
