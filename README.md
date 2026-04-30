@@ -41,7 +41,7 @@ The models are evaluated using:
 
 - Platform: Google Colab
 - Python: 3.12.13
-- GPU: NVIDIA Tesla T4 (when GPU runtime is enabled)
+- GPU: NVIDIA Tesla T4
 
 ## Files
 
